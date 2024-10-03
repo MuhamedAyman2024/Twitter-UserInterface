@@ -1,0 +1,131 @@
+/* 
+  ---(01) TYPOGRAPHY SYSTEM
+
+    SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 /
+    128
+
+
+    FONT SIZE SYSTEM (px)
+    0 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 /
+    62 / 74 / 86 / 98
+
+
+    Font Weights: 
+
+    Line Heights:
+
+    Letter Spacing:
+
+    **************************** 
+
+    ---(02) COLORS
+
+    -Primary:
+    #40c057 (button color)
+    -Tints:
+    -Shades:
+    #2f9e44
+    #f1f3f5 for #f8f9fa
+    -Accents:
+    -Greys:
+    #202327
+    #39444d (border color)
+    #71767b 
+    rgba(57, 68, 77, 0.4) (hover for black background)
+    #f8f9fa (text light grey for black background color)
+
+    **************************** 
+
+    ---(03) SHADOWS
+
+    **************************** 
+
+    ---(06) BORDER-RADIUS
+
+    **************************** 
+
+    ---(07) WHITESPACE
+
+
+
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: black;
+  color: #f8f9fa;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #f8f9fa;
+}
+
+.container {
+  max-width: 130rem;
+  max-height: 100vh;
+  padding: 0 2.4rem;
+  margin: 0 auto;
+  /* background-color: #444; */
+  display: grid;
+  grid-template-columns: 20fr 50fr 30fr;
+  column-gap: 0.4rem;
+  overflow-y: hidden;
+}
+
+/* START GENERAL REUSABLE COMPONENTS */
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background-color: #37b24d;
+  width: 90%;
+  padding: 1.6rem 2.4rem;
+  margin-top: 1.2rem;
+  margin-bottom: 3.2rem;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #2f9e44;
+}
+
+.btn-small:link,
+.btn-small:visited {
+  background-color: #f8f9fa;
+  color: #000;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 5rem;
+  transition: all 0.2s;
+}
+
+.btn-small:hover,
+.btn-small:active {
+  background-color: #dee2e6;
+}
+/* END GENERAL REUSABLE COMPONENTS */
